@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.table.table.Controller">
+   <center>
+      <TableView fx:id="tvItems" prefHeight="239.0" prefWidth="393.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="190.66669082641602" text="Name" />
+          <TableColumn fx:id="colPrize" prefWidth="135.9999237060547" text="Prize" />
+            <TableColumn fx:id="colType" prefWidth="174.66671752929688" text="Type" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <top>
+      <AnchorPane prefHeight="69.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtSearch" layoutX="51.0" layoutY="22.0" prefHeight="25.0" prefWidth="192.0" />
+            <ChoiceBox fx:id="cbType" layoutX="256.0" layoutY="22.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
